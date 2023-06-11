@@ -67,7 +67,9 @@ footer{
     font-size: 4.8rem;
     margin-bottom: 1.5rem;
 }
-
+.dra{
+    font-size: 3.5rem;
+}
 .styles-input{
     width: 30.9rem;
     height: 3.5rem;
@@ -120,4 +122,18 @@ footer p span{
 footer p span img{
     width: 1rem;
     height: 1rem;
+}
+.spinner{
+    height: 6rem;
+    width: 6rem;
+    border: 6px solid black;
+    border-color: black transparent black transparent;
+    border-radius: 50%;
+    animation:  spin 1s linear infinite;
+    display: block;
+}
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
 }
