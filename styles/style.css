@@ -224,12 +224,13 @@ header{
   .cards{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 2rem;
   }
   .card{
-     margin: 0.5rem;
+     margin: 1rem;
      width: 28rem;
      height: 38.7rem;
      border-radius: 1rem;
@@ -259,7 +260,7 @@ header{
     font-weight: 500;
     margin: 1rem;
   }
-  .card input{
+  .bt-card{
     background-color: var(--backgroundFooter);
     outline: none;
     color: var(--white);
