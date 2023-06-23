@@ -29,16 +29,24 @@
     <section class="upload-container">
          <form action="" class="upload-form">
             <label for="">Nome do item:</label>
-            <input type="text" name="name-item">
+            <input type="text" name="name-item" class="textArea" placeholder="Ex:Copo Stanley">
             <label for="">Pequena descrição item:</label>
-            <textarea name="description-item cols="25" rows="5" maxlength="90"></textarea>
-            <label for="">Perguntas para validação</label>
-            <textarea name="questions-products" id="" cols="50" rows="5"></textarea>
-            <label for="">Localização de encontro</label>
-            <textarea name="questions-products" id="" cols="50" rows="5"></textarea>
-            <label for="">Escolha imagem</label>
+            <textarea class="textArea" name="description-item" cols="15" rows="3" maxlength="90" placeholder="Ex:Copo Stanley encontrado no laboratorio de informatica"></textarea>
+            <label for="">Perguntas para validação:</label>
+            <textarea class="textArea" name="questions-item" 
+                cols="30" 
+                rows="4" 
+                placeholder="Ex:Qual o nome atras abaixo do item ?&#10Qual o nome atras abaixo do item ?"></textarea>
+            <label for="">Localização de encontro:</label>
+            <textarea 
+                class="textArea" 
+                name="location-item" 
+                cols="17" 
+                rows="4" 
+                placeholder="Ex:Unifessa campus 2 &#10 Bloco 5 &#10 Sala 24 &#10 Horario : 17:30"></textarea>
+            <label for="">Escolha imagem:</label>
             <input type="file" name="upload-img">
-            <input type="submit" value="Enviar">
+            <input class="bt-upload" type="submit" value="Enviar">
          </form>
     </section> 
 </main>
