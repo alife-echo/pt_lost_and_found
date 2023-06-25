@@ -295,17 +295,23 @@ header{
     border-radius: 1.5rem;
 }
 .upload-form input[type='text']{
-     padding: 1rem;
-     font-size: 1.5rem;
+    width: 35rem;
+}
+.sharedInput{
+    border: transparent;
+    background-color: var(--backgroundTextArea);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    outline: none;
+    font-size: 1.5rem;
+    opacity: 0.5;
 }
 .textArea{
-     border: transparent;
-     background-color: var(--backgroundTextArea);
-     opacity: 0.5;
-     border-radius: 0.8rem;
-     padding: 1rem;
-     font-size: 1.5rem;
-     outline: none;
+     width: 35rem;
+     height: 7rem;
+}
+.d{
+    height: 10rem;
 }
 .upload-form label{
     font-size: 1.6rem;
