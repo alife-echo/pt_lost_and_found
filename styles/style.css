@@ -32,12 +32,7 @@ body{
 .form-container{
     flex: 1.1;
 }
-footer{
-    min-height: 7.5rem;
-    max-height: 100%;
-    width: 100%;
-    background-color: var(--backgroundFooter);
-}
+
 .form-container form{
     display: flex;
     flex-direction: column;
@@ -99,7 +94,12 @@ footer{
     margin-top: 1rem;
     background-color: var(--backgroundFooter);
 }
-
+footer{
+    min-height: 7.5rem;
+    max-height: 100%;
+    width: 100%;
+    background-color: var(--backgroundFooter);
+}
 footer p{
  color: var(--white);    
  font-family: 'Inter';
