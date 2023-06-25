@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="body-home">
-    <main class="main-home">
+<body class="flex-col full-size">
+    <main class="full-size-grow">
     <header>
         <nav>
            <h1 class="title-home"><a href="./home.html">SAP</a></h1>
@@ -26,27 +26,37 @@
            </div>
         </nav>
    </header>
-    <section class="upload-container">
-         <form action="" class="upload-form">
-            <label for="">Nome do item:</label>
-            <input type="text" name="name-item"  class="sharedInput" placeholder="Ex:Copo Stanley">
-            <label for="">Pequena descrição item:</label>
-            <textarea class="textArea sharedInput" name="description-item"  maxlength="90" placeholder="Ex:Copo Stanley encontrado no laboratorio de informatica"></textarea>
-            <label for="">Perguntas para validação:</label>
-            <textarea class="textArea sharedInput" name="questions-item" 
-                placeholder="Ex:Qual o nome atras abaixo do item ?&#10Qual o nome atras abaixo do item ?"></textarea>
-            <label for="">Localização de encontro:</label>
+    <section class="upload-container flex">
+         <form action="" class="flex-col upload-form">
+            <label for="" class="label-upload sty-label">Nome do item:</label>
+            <input 
+                type="text" 
+                name="name-item"  
+                class="si-tu styles-input size-inputs" 
+                placeholder="Ex:Copo Stanley">
+            <label for="" class="label-upload sty-label">Pequena descrição item:</label>
             <textarea 
-                class="textArea d sharedInput" 
+                class="textArea styles-input" 
+                name="description-item"  
+                maxlength="90" 
+                placeholder="Ex:Copo Stanley encontrado no laboratorio de informatica"></textarea>
+            <label for="" class="label-upload sty-label">Perguntas para validação:</label>
+            <textarea 
+                class="textArea styles-input" 
+                name="questions-item" 
+                placeholder="Ex:Qual o nome atras abaixo do item ?&#10Qual o nome atras abaixo do item ?"></textarea>
+            <label for="" class="label-upload sty-label">Localização de encontro:</label>
+            <textarea 
+                class=" dif-heigh-text textArea  styles-input" 
                 name="location-item" 
-                placeholder="Ex:Unifessa campus 2 &#10 Bloco 5 &#10 Sala 24 &#10 Horario : 17:30"></textarea>
-            <label for="">Escolha imagem:</label>
+                placeholder="Ex:Unifesspa campus 2 &#10 Bloco 5 &#10 Sala 24 &#10 Horario : 17:30"></textarea>
+            <label for="" class=" label-upload sty-label">Escolha imagem:</label>
             <input type="file" name="upload-img">
-            <input class="bt-upload" type="submit" value="Enviar">
+            <input class="bt-upload sb-style" type="submit" value="Enviar">
          </form>
     </section> 
 </main>
-   <footer>
+   <footer class="flex">
     <p>COPYRIGHT <span><img src="./images/Copyright Symbol.png" alt="imagem copyright"></span> 2021-2023 - SAP TODOS OS DIREITOS RESERVADOS</p>
 </footer>
 </body>

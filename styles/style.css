@@ -11,36 +11,27 @@ html{
     scroll-behavior: smooth;
     --backgroundFooter:#111111;
     --backgroundDefaultElements:#000000;
-    --backgroundInputs:#ECECEC;
+    --backgroundInputs: #ECECEC;
     --white:#FFFFFF;
     --colorTextCard:#666666;
-    --backgroundTextArea:#D9D9D9;
 }
 
-
-.body-content{
-    height: 100vh;
-    width: 100%;
-    display: flex;
+/*LOGIN,REGISTER,RETRIEVE  AND PAGE*/
+body{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
-.main-content{
+.flex{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+}
+.full-size{
     height: 100vh;
+    width: 100%;
 }
 .form-container{
     flex: 1.1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
-
 footer{
     min-height: 7.5rem;
     max-height: 100%;
@@ -51,17 +42,15 @@ footer{
     display: flex;
     flex-direction: column;
 }
-.form-container form:nth-child(0){
-    text-align: center;
-}
-.form-container form label{
+.sty-label{
     margin-bottom: 0.8rem;
     margin-top: 0.8rem;
     font-family: 'Inter';
     font-weight: 500;
     font-size: 1.5rem;
 }
-.dt{
+
+.center-text{
     text-align: center;
 }
 .title-form{
@@ -74,15 +63,18 @@ footer{
 .dra{
     font-size: 3.5rem;
 }
-.styles-input{
+.size-inputs{
     width: 30.9rem;
     height: 3.5rem;
+}
+.styles-input{
     background-color: var(--backgroundInputs);
     outline: none;
     border: transparent;
-    border-radius: 8px;
+    border-radius: 0.8rem;
+    font-family: 'Inter';
     padding: 2rem;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: var(--backgroundDefaultElements);
 }
 .link{
@@ -100,19 +92,14 @@ footer{
     border: transparent;
     width: 30.9rem;
     height: 3.5rem;
-    border-radius: 8px;
+    border-radius: 0.8rem;
     font-size: 1.7rem;
     color: var(--white);
     cursor: pointer;
     margin-top: 1rem;
-    background-color: var(--backgroundDefaultElements);
+    background-color: var(--backgroundFooter);
 }
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
+
 footer p{
  color: var(--white);    
  font-family: 'Inter';
@@ -149,12 +136,9 @@ header{
     padding: 1rem 0rem 1rem 0rem;
     background-color: var(--backgroundFooter);
 }
-.body-home{
-    height: 100vh;
-    width: 100%;
+.flex-col{
     display: flex;
     flex-direction: column;
-    
 }
 .title-home  {
     font-size: 3.2rem;
@@ -168,7 +152,7 @@ header{
 .title-home a{
     color: inherit;
 }
-.main-home{
+.full-size-grow{
     width: 100%;
     flex-grow: 1;
 }
@@ -227,9 +211,6 @@ header{
   }
   /*CARDS*/
   .cards{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 2rem;
@@ -282,54 +263,33 @@ header{
 
   /*UPLOAD PAGE*/
 .upload-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 1rem 0rem 0.5rem 0rem;
 }
 .upload-form{
     padding: 2rem;
-    display: flex;
     justify-content: center;
-    flex-direction: column;
     box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.1);
     border-radius: 1.5rem;
 }
-.upload-form input[type='text']{
+.si-tu{
     width: 35rem;
 }
-.sharedInput{
-    border: transparent;
-    background-color: var(--backgroundTextArea);
-    border-radius: 0.8rem;
+.bt-upload{
+    width: 100%;
     padding: 1rem;
-    outline: none;
-    font-size: 1.5rem;
-    opacity: 0.5;
+    height: 4rem;
 }
 .textArea{
      width: 35rem;
-     height: 7rem;
+     height: 8rem;
+     padding: 1rem;
 }
-.d{
+.dif-heigh-text{
+    padding: 1rem;
     height: 10rem;
 }
-.upload-form label{
+.label-upload{
+    margin-top: 0.1rem;
     font-size: 1.6rem;
     font-weight: 600;
-    font-family: 'Inter';
-    margin: 0.5rem 0 0.5rem 0;
-}
-.bt-upload{
-    background-color: var(--backgroundFooter);
-    outline: none;
-    padding: 1rem;
-    margin-top: 1rem;
-    color: var(--white);
-    font-family: 'Inter';
-    font-weight: bold;
-    font-size: 1.4rem;
-    border-radius: 0.8rem;
-    border: transparent;
-    cursor: pointer;
 }
