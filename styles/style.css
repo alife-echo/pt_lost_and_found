@@ -233,20 +233,25 @@ header{
      height: 19rem;
      border-radius: 1rem;
   }
-  .card h2{
-    font-size: 2rem;
+  .title-card{
     color: var(--backgroundDefaultElements);
     font-family: 'Inter';
     font-weight: 600;
     margin: 1rem;
   }
-  .card p {
-    font-size: 1.6rem;
+  .p-card{
     color: var(--colorTextCard);
     font-family: 'Inter';
     font-weight: 500;
     margin: 1rem;
   }
+  .text-xl{
+    font-size: 2rem;
+  }
+  .text-xs{
+    font-size: 1.6rem;
+  }
+
   .bt-card{
     background-color: var(--backgroundFooter);
     outline: none;
@@ -292,4 +297,27 @@ header{
     margin-top: 0.1rem;
     font-size: 1.6rem;
     font-weight: 600;
+}
+.mt{
+    margin-top: 1rem;
+}
+.mg{
+    margin: 1rem;
+}
+.mt-flex{
+    margin-top: 1.5rem;
+}
+.input-textArea{
+    width: 96%;
+    height: 13rem;
+}
+.img-forum{
+    width: 50rem;
+    height: 30rem;
+    border-radius: 0.8rem;
+}
+.info-item{
+    box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.1);
+    padding: 0rem 0rem 1rem 0rem;
+    border-radius: 0.8rem;
 }
