@@ -213,16 +213,18 @@ header{
   .cards{
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: flex-start;
     margin-top: 2rem;
   }
   .card{
      margin: 1rem;
      width: 28rem;
-     height: 38.7rem;
      border-radius: 1rem;
      box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.1);
      transition: ease 300ms;
      cursor: pointer;
+     overflow: hidden;
+     word-wrap: break-word;
   }
   .card:hover{
     transition: ease 300ms;
@@ -298,13 +300,13 @@ header{
     font-size: 1.6rem;
     font-weight: 600;
 }
-.mt{
-    margin-top: 1rem;
-}
-.mg{
+.m-1{
     margin: 1rem;
 }
-.mt-flex{
+.mt-1{
+    margin-top: 1rem;
+}
+.mt-1_5{
     margin-top: 1.5rem;
 }
 .input-textArea{
