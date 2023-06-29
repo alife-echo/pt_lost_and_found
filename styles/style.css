@@ -99,6 +99,7 @@ footer{
     max-height: 100%;
     width: 100%;
     background-color: var(--backgroundFooter);
+    
 }
 footer p{
  color: var(--white);    
@@ -338,4 +339,59 @@ header{
     transition: ease 300ms;
     box-shadow: 0px 0px 7px 9px rgba(0,0,0,0.1);
     
+}
+@media screen and (max-width:450px) {
+    footer p{
+        font-size: 1rem;
+    }
+    footer p span{
+        padding: 0.3rem;
+    }
+}
+@media screen and (max-width:353px) {
+    footer p{
+        font-size: 0.8rem;
+    }
+    footer p span{
+     padding-bottom: 0rem;
+    }
+}
+@media screen and (max-width:327px) {
+    .size-inputs{
+        width: 23rem;
+        height: 3rem;
+    }
+    .sb-style{
+        width: 23rem;
+        height: 3rem;
+    }
+    
+}
+@media screen and (max-width:280px) {
+    footer p{
+        font-size: 0.6rem;
+    }
+    footer p span{
+     padding: 0.2rem 0.2rem 0.01rem 0.1rem;
+    }
+    footer p span img{
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+    .size-inputs{
+        width: 20rem;
+        height: 3rem;
+    }
+    .sb-style{
+        width: 20rem;
+        height: 3rem;
+    }
+    .title-form{
+        font-size: 3.8rem;
+    }
+    .register-retrieve{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
