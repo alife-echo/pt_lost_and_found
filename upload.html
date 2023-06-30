@@ -12,13 +12,18 @@
 </head>
 <body class="flex-col full-size">
     <main class="full-size-grow">
-    <header>
+    <header class="on">
         <nav>
            <h1 class="title-home"><a href="./home.html">SAP</a></h1>
            <div class="form-group fg--search">
                <input type="text" class="input-filter" placeholder="Informações sobre o achado">
                <button type="submit"><img src="./images/Magnifying glass.png" class="fa fa-search"></i></button>
            </div>
+           <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
            <div class="imgs-link">
             <figure><a href="./upload.html"><img src="./images/Cloud computing.png" alt="imagem de nuvens"></a></figure>
             <figure><a href="./messages.html"><img src="./images/Email.png" alt="imagem de nuvens"></a></figure>
@@ -26,6 +31,11 @@
            </div>
         </nav>
    </header>
+   <section class="links-hidden">
+    <a href="./upload.html">UPLOAD</a>
+    <a href="./messages.html">MENSAGENS</a>
+    <a href="./index.html">SAIR</a>
+ </section>
     <section class="upload-container flex">
          <form action="" class="flex-col upload-form">
             <label for="" class="label-upload sty-label">Nome do item:</label>
@@ -59,5 +69,6 @@
    <footer class="flex">
     <p>COPYRIGHT <span><img src="./images/Copyright Symbol.png" alt="imagem copyright"></span> 2021-2023 - SAP TODOS OS DIREITOS RESERVADOS</p>
 </footer>
+<script src="./js/script.js"></script>
 </body>
 </html>
