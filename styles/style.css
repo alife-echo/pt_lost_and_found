@@ -611,4 +611,10 @@ header{
         flex-direction: column;
         align-items: center;
     }
+    .sb-style-upload{
+        width: 20rem;
+    }
+   input[type='file']{
+        width: 20rem;
+   }
 }
