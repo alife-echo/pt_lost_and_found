@@ -344,6 +344,7 @@ header{
     .links-hidden a{
         display: none;
     }
+    
 }
 @media  screen and (max-width:890px) {
     .links-hidden{
@@ -359,8 +360,10 @@ header{
         font-size: 2rem;
         font-family: 'Inter';
         font-weight: 400;
+        transition: 300ms ease; 
     }
     .links-hidden a:hover{
+        transition: 300ms ease;
         background-color: var(--white);
         color: var(--backgroundFooter);
     }
@@ -426,6 +429,12 @@ header{
     .fg--search{
         width: 25rem;
     }
+    .input-filter::placeholder{
+        font-size: 1.3rem;
+    }
+    .title-home{
+        margin-left: 0.5rem;
+    }
 }
 @media screen and (max-width:450px) {
     footer p{
@@ -435,13 +444,31 @@ header{
         padding: 0.3rem;
     }
 }
-@media screen and (max-width:440px){
-    .fg--search button img{
-        width: 2rem;
-    }
-    .form-group{
+@media screen and (min-width:441px){
+    .input-search-hidden,.submit-search-hidden,.form-input-search-hidden{
         display: none;
     }
+    .submit-search-hidden{
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width:440px){
+.form-group{
+    display: none;
+}
+.input-search-hidden{
+    outline: none;
+    border: transparent;
+    padding: 1rem;
+    border-radius: 0.8rem;
+}
+.submit-search-hidden{
+   padding: 1rem; 
+   outline: none;
+   border: transparent;
+   border-radius: 0.8rem;
+}
+   
 }
 @media screen  and (max-width:400px){
     .card{
@@ -479,15 +506,23 @@ header{
     }
     
 }
+@media screen and (max-width:282px){
+    .submit-search-hidden{
+        margin-top: 1rem;
+    }
+}
 @media screen and (max-width:280px) {
     .card{
-        width: 24rem;
+        width: 25rem;
     }
     .bt-card{
         width: 90%;
     }
      .card figure img{
         height: 20rem;
+    }
+    .bt-card{
+        font-size: 1.3rem;
     }
     footer p{
         font-size: 0.6rem;
@@ -514,5 +549,11 @@ header{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .text-xl{
+        font-size: 1.5rem;
+    }
+    .text-xs{
+        font-size: 1.4rem;
     }
 }

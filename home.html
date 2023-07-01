@@ -17,8 +17,11 @@
             <nav>
                <h1 class="title-home">SAP</h1>
                <div class="form-group fg--search">
-                   <input type="text" class="input-filter" placeholder="Informações sobre o achado">
-                   <button type="submit"><img src="./images/Magnifying glass.png" class="fa fa-search"></i></button>
+                <form action="">
+                  <input type="text" class="input-filter" name="filter-search" placeholder="Informações sobre o achado">
+                  <button type="submit"><img src="./images/Magnifying glass.png" class="fa fa-search"></i></button>
+                </form>
+                  
                </div>
                <div class="menu-toggle">
                  <div class="one"></div>
@@ -33,6 +36,10 @@
             </nav>
        </header>
        <section class="links-hidden">
+          <form action="" class="form-input-search-hidden">
+             <input type="text" name="filter-search" class="input-search-hidden">
+             <input type="submit" value="Pesquisar" class="submit-search-hidden">
+          </form>
           <a href="./upload.html">UPLOAD</a>
           <a href="./messages.html">MENSAGENS</a>
           <a href="./index.html">SAIR</a>
