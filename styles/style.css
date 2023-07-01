@@ -94,6 +94,24 @@ body{
     margin-top: 1rem;
     background-color: var(--backgroundFooter);
 }
+.sb-style-upload{
+    font-family: 'Inter';
+    font-weight: 500;
+    outline: none;
+    border: transparent;
+    width: 30.9rem;
+    height: 3.5rem;
+    border-radius: 0.8rem;
+    font-size: 1.7rem;
+    color: var(--white);
+    cursor: pointer;
+    margin-top: 1rem;
+    background-color: var(--backgroundFooter);
+}
+.size-input-name-item{
+    width: 30.9rem;
+    height: 3.5rem;
+}
 footer{
     min-height: 7.5rem;
     max-height: 100%;
@@ -433,7 +451,7 @@ header{
         font-size: 1.3rem;
     }
     .title-home{
-        margin-left: 0.5rem;
+        margin-left: 2rem;
     }
 }
 @media screen and (max-width:450px) {
@@ -485,6 +503,25 @@ header{
     footer p span{
      padding-bottom: 0rem;
     }
+    .sb-style-upload{
+        width:25rem;
+      
+    }
+    .textArea{
+        width: 25rem;
+    }
+    .textArea::placeholder{
+        font-size: 1.2rem;
+    }
+    .upload-form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .size-input-name-item{
+        width: 20rem;
+    }
 }
 @media screen and (max-width:345px) {
     .card{
@@ -505,6 +542,12 @@ header{
         height: 3rem;
     }
     
+}
+@media screen and (max-width:324px){
+    .bt-upload{
+        width: 100%;
+    }
+ 
 }
 @media screen and (max-width:282px){
     .submit-search-hidden{
@@ -534,6 +577,9 @@ header{
         width: 0.7rem;
         height: 0.7rem;
     }
+    footer{
+        width: 100%;
+    }
     .size-inputs{
         width: 20rem;
         height: 3rem;
@@ -555,5 +601,14 @@ header{
     }
     .text-xs{
         font-size: 1.4rem;
+    }
+    .textArea{
+        width: 20rem;
+    }
+    .upload-form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 }
