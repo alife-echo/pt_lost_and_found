@@ -228,7 +228,7 @@ header{
   .imgs-link  figure:nth-child(1),.imgs-link  figure:nth-child(2){
         margin-right: 2rem;
   }
-  /*CARDS*/
+  /*CARDS PAGE HOME*/
   .cards{
     flex-wrap: wrap;
     flex-direction: row;
@@ -365,6 +365,7 @@ header{
 .links-hidden {
     transition: display 0.3s;
 }
+/* MEDIA QUERIES */
 @media screen and (min-width:891px){
     .links-hidden a{
         display: none;
@@ -409,22 +410,6 @@ header{
     .fg--search{
         width: 40rem;
     }
-    /*
-    header.on{
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: var(--backgroundFooter);
-        z-index: 10;
-    }
-    header.on .menu-toggle{
-        position: absolute;
-        right: 0;
-        top:15px;
-    }
-    */
 }
 .menu-toggle{
     cursor: pointer;
